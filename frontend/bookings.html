@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Bookings - EstatePro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🏠 EstatePro</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="owners.html">Owners</a>
+                <a class="nav-link" href="agents.html">Agents</a>
+                <a class="nav-link" href="buyers.html">Buyers</a>
+                <a class="nav-link" href="listings.html">Listings</a>
+                <a class="nav-link" href="properties.html">Properties</a>
+                <a class="nav-link" href="visits.html">Visits</a>
+                <a class="nav-link active" href="bookings.html">Bookings</a>
+                <a class="nav-link" href="payments.html">Payments</a>
+                <a class="nav-link" href="agreements.html">Agreements</a>
+                <a class="nav-link" href="reports.html">Reports</a>
+                <a class="nav-link" href="booking.html">Book Prop</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Manage All Bookings</h2>
+            <a href="booking.html" class="btn btn-primary">Create New Booking</a>
+        </div>
+
+        <div class="table-container shadow-sm p-3 bg-white rounded">
+            <table class="table table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th>Date</th>
+                        <th>Buyer</th>
+                        <th>Property</th>
+                        <th>Price (₹)</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="bookingsListTable">
+                    <!-- Loaded via JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
